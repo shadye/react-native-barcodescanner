@@ -9,51 +9,17 @@ React native 0.19 changed the ReactProps class which led to problems with updati
 ### Installation
 
 ```bash
+npm i -g rnpm
+```
+
+```bash
 npm i --save react-native-barcodescanner
 ```
 
 ### Add it to your android project
-
-* In `android/settings.gradle`
-
-  ```gradle
-  ...
-  include ':ReactNativeBarcodescanner', ':app'
-  project(':ReactNativeBarcodescanner').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-barcodescanner/android')
-  ```
-
-* In `android/app/build.gradle`
-
-  ```gradle
-  ...
-  dependencies {
-      ...
-      compile project(':ReactNativeBarcodescanner')
-  }
-  ```
-
-* register module (in MainActivity.java)
-
-  Add the following **import** statement:
-  ```Java
-  import com.eguma.barcodescanner.BarcodeScanner;
-  ```
-
-  ...and then add `BarcodeScanner` to exported package list *(MainActivity.java#getPackages)*:
-
-  ```Java
-  public class MainActivity extends ReactActivity {
-      // (...)
-
-      @Override
-      protected List<ReactPackage> getPackages() {
-        return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
-          new BarcodeScanner()
-        );
-      }
-  }
-  ```
+```bash
+rnpm link
+```
 
 ## Example
 ```javascript

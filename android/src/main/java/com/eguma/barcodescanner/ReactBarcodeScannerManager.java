@@ -93,7 +93,7 @@ public class ReactBarcodeScannerManager extends ViewGroupManager<ReactBarcodeSca
         mScannerView.setBorderLineLength(DEFAULT_VIEWFINDER_BORDER_LENGTH);
         mScannerView.setDrawLaser(DEFAULT_VIEWFINDER_DRAW_LASER);
         mScannerView.setLaserColor(DEFAULT_VIEWFINDER_LASER_COLOR);
-        mScannerView.setCameraType(DEFAULT_CAMERA_TYPE);
+        // mScannerView.setCameraType(DEFAULT_CAMERA_TYPE);
         mScannerView.setTorchMode(DEFAULT_TORCH_MODE);
         mScannerViewVisible = true;
         return mScannerView;
