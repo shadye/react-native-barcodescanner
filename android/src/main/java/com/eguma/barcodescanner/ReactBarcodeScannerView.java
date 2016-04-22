@@ -154,7 +154,7 @@ public class ReactBarcodeScannerView extends ZXingScannerView implements ZXingSc
             event
         );
 
-        startCamera(mCameraId);
-        setFlash(torchModeIsEnabled());
+        // startCamera(mCameraId);
+        // setFlash(torchModeIsEnabled());
     }
 }
